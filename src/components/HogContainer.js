@@ -3,13 +3,13 @@ import Hog from './Hog'
 
 
 let HogContainer = (props) => {
-
-    let arrayOfHogs = props.allHogs.map((singleHog) => {
-        return <Hog 
-        key={singleHog.id}
-        hog={singleHog}
-        />
-    })
+      
+  let arrayOfHogs = props.hogs.map((singleHog) => {
+      return <Hog 
+      key={singleHog.id}
+      hog={singleHog}
+      />
+  })
 
     console.log(arrayOfHogs, "hello")
 
